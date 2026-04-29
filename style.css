@@ -1,0 +1,40 @@
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #ffffff;
+    --accent-color: #00ff41; /* Matrix Green */
+    --font-mono: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+}
+
+.clock-container {
+    text-align: center;
+    border: 1px solid #333;
+    padding: 40px 80px;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+}
+
+#clock {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+#date {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #666;
+    letter-spacing: 2px;
+}
